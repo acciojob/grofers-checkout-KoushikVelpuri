@@ -4,11 +4,14 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-  const itemsPrice = document.querySelectorAll('.price')
+	const tr = document.createElement('tr')
+	const itemsPrice = document.querySelectorAll('.price')
 	let totalAmount = 0
-	itemsPrice.forEach((item)=>{
-		totalAmount += Numebr(item.textContent)
-	})console.log(totalAmount)
+	itemsPrice.forEach(item)=>{
+		totalAmount += Number(item.textContent)
+	}
+	console.log(totalAmount)
+	table.append(tr)
 };
 
 getSumBtn.addEventListener("click", getSum);
